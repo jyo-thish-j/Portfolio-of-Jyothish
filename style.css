@@ -1,0 +1,148 @@
+
+
+.text-gradient {
+  background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%,#24243e 25%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Apply this to the landing section */
+.landing-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  color: white;
+  background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #4a00e0,  #e21e80);
+  background-size: 600% 600%;
+  animation: gradientShift 12s ease-in-out infinite;
+ 
+}
+#contact{
+    background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #4a00e0,  #e21e80);
+    color:white;
+    background-size: 600% 600%;
+    animation: gradientShift 12s ease-in-out infinite;
+}
+#contact a{
+    color: rgba(217, 217, 217, 0.797)!important;
+}
+
+/* Gradient animation keyframes */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  25%{
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75%{
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#my-photo{
+    border: 5xpx solid white;
+    border-radius: 50%;
+    
+  
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3); /* Cool blue glow */
+
+
+}
+
+#landing-text{
+    color: white!important ;   
+}
+
+.btn-custom {
+  background-color: #4a00e0;      /* Default state */
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+  background-color: #5f1bb4;     /* Hover and focus */
+  color: white;
+}
+
+.btn-custom:active {
+  background-color: #43118f;     /* Clicked (active) */
+  color: white;
+}
+
+@media (min-width: 800px){
+#dashboard img{
+  height:90vh !important;
+ 
+}
+}
+
+
+
+
+
+
+
+
+/*Acheivements*/
+.centering-flex-container{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  
+}
+
+
+.entrance-grid-container img{
+  width:100%;
+ border-radius: 1%;
+ height:90%;
+ object-fit: cover;
+
+}
+.outGoingImg{
+  object-fit: contain;
+  width: 80vw;
+  border-radius: 2%;
+  border: 1px solid #24243e
+}
+
+#entrance-results h4{
+  margin: 2px;
+  color: #302b63;
+}
+
+.header-small{
+    background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #4a00e0,  #e21e80);
+    color:white;
+    text-align:center;
+    background-size: 600% 600%;
+    animation: gradientShift 12s ease-in-out infinite;
+}
+/*Activity*/
+.activity-image{
+  height:100%;
+  width:100%;
+}
+
+/*Skills*/
+#skills-content h3{
+  font-size: 2rem;
+}
+.badges span{
+  font-size: 1.2rem;
+  background-color: #43118f!important;
+}
